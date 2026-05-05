@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+
+<employees>
+    <employee id="101">
+        <name>Khadija</name>
+        <performance>90</performance>
+        <department>IT</department>
+    </employee>
+
+    <employee id="102">
+        <name>Ananya</name>
+        <performance>65</performance>
+        <department>HR</department>
+    </employee>
+
+    <employee id="103">
+        <name>Shahuraj</name>
+        <performance>45</performance>
+        <department>Finance</department>
+    </employee>
+
+    <employee id="104">
+        <name>Omkar</name>
+        <performance>78</performance>
+        <department>Marketing</department>
+    </employee>
+</employees>
