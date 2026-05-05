@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: #fff0f5;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #7ab4cb;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #2290ff;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ffb6c1;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #ff69b4;
+            box-shadow: 0 0 5px #ff69b4;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+            color: black;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff69b4;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #d63384;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="datetime">Date & Time</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+
+        <label for="year">Studying Year</label>
+        <select id="year" name="year">
+            <option>F.Y</option>
+            <option>S.Y</option>
+            <option>T.Y</option>
+            <option>Final Year</option>
+        </select>
+
+        <label>Skills</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="skills" value="html"> HTML</label>
+            <label><input type="checkbox" name="skills" value="css"> CSS</label>
+            <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+        </div>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option>Select OEC Course</option>
+            <option>Waste Management</option>
+            <option>Disaster Management</option>
+            <option>Data Science</option>
+            <option>Artificial Intelligence</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+</div>
+
+</body>
+</html>
