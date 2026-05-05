@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<employees>
+    <employee>
+        <name>Khadija</name>
+        <department>IT</department>
+        <salary>60000</salary>
+    </employee>
+
+    <employee>
+        <name>Shahuraj</name>
+        <department>HR</department>
+        <salary>40000</salary>
+    </employee>
+
+    <employee>
+        <name>Parth</name>
+        <department>Finance</department>
+        <salary>30000</salary>
+    </employee>
+
+    <employee>
+        <name>Devank</name>
+        <department>IT</department>
+        <salary>80000</salary>
+    </employee>
+</employees>
