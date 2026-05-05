@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            height: 20%;
+            background: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Main layout */
+        .main {
+            display: flex;
+            height: 80%;
+        }
+
+        /* Menu */
+        .menu {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+            background: #ddd;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Content */
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Header</h1>
+</div>
+
+<!-- Main Section -->
+<div class="main">
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="#" onclick="load('home'); return false;">Home</a>
+        <a href="#" onclick="load('about'); return false;">About</a>
+    </div>
+
+    <!-- Content -->
+    <div id="content" class="content">
+        <h2>Welcome</h2>
+    </div>
+
+</div>
+
+<script>
+function load(page){
+    document.getElementById("content").innerHTML =
+        page==="home"
+        ? "<h2>Home</h2><p>Home content</p>"
+        : "<h2>About</h2><p>About content</p>";
+}
+</script>
+
+</body>
+</html>
